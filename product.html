@@ -1,0 +1,73 @@
+<html>
+<meta name="viewport" content="widht-device-width, initial-scale-1">
+<link rel="stylesheet" href="w3.css">
+<body>
+
+<img src="logo4.jpeg" style="width:100%">
+<style>
+body { background-color: #1a3e82; }
+</style>
+</body>
+
+<div class=" w3- bar w3-container w3-red">
+<b><a href="index.html"><img src="back.png"></src></a>
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'SPERPAT')">SPERPAT</button>
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'MATIC')">MATIC</button>
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'BEBEK')">BEBEK</button>
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'2TAK&SPORT')">2TAK & SPORT</button>
+</b>
+</div>
+
+
+ <div id="MATIC" class="w3-container city " style="display: ;:none">
+ 	<center>
+ <div class="w3-panel w3-white w3-card-4">
+ <img src="14.JPEG" style="width: 100%;">
+ <p>
+<b>
+ <a href="matic.html" class="w3-btn w3-red">Cari Sekarang</src></a>
+</div>
+</p></center></div>
+
+<div id="SPERPAT" class="w3-container city" style="display: ;:none">
+    <center>
+<div class="w3-panel w3-white w3-card-4">
+<hr>
+</div>
+ </div></center>
+
+
+ <div id="BEBEK" class="w3-container city " style="display:none">
+ 	<center>
+ <div class="w3-panel w3-white w3-card-4">
+<img src="B3.JPEG" style="width: 100%;">
+<p>
+  <a href="bebek.html" class="w3-btn w3-red">Cari Sekarang</src></a>
+ </div> </div></center>
+
+<div id="2TAK&SPORT" class="w3-container city " style="display:none">
+ 	<center>
+<div class="w3-panel w3-white w3-card-4">
+<img src="T15.JPEG" style="width: 100%;">
+<p>
+ <a href="2TAK.html" class="w3-btn w3-red" >Cari Sekarang</src></a>
+</p></div></center>
+ 
+
+<script>
+function openCity(evt, cityName) {
+ var i, x, tablinks;
+ x = document.getElementsByClassName("city");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ tablinks = document.getElementsByClassName("tablink");
+ for (i = 0; i < x.length; i++) {
+ tablinks[i].className = tablinks[i].className.replace(" w3-green", "");
+ }
+ document.getElementById(cityName).style.display = "block";
+ evt.currentTarget.className += " w3-green";
+}
+</script>
+</body>
+</html>
